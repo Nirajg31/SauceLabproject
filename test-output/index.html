@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Sample_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Sample Suite</span>
+              <span class="suite-name border-failed">Sample Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Sample_Suite" class="hide-methods failed suite-Sample_Suite"> (hide)</a> <!-- hide-methods failed suite-Sample_Suite -->
+                      <a href="#" panel-name="suite-Sample_Suite" class="show-methods failed suite-Sample_Suite"> (show)</a> <!-- show-methods failed suite-Sample_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Sample_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sample_Suite" title="TestCases.LoginTest" class="method navigator-link" hash-for-method="TC01_LoginSuccess">TC01_LoginSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Sample_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,11 +114,6 @@
                       <a href="#" panel-name="suite-Sample_Suite" class="show-methods passed suite-Sample_Suite"> (show)</a> <!-- show-methods passed suite-Sample_Suite -->
                     </span>
                     <div class="method-list-content passed suite-Sample_Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Sample_Suite" title="TestCases.LoginTest" class="method navigator-link" hash-for-method="TC01_LoginSuccess">TC01_LoginSuccess</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Sample_Suite" title="TestCases.LoginTest" class="method navigator-link" hash-for-method="TC02_LoginFailure">TC02_LoginFailure</a> <!-- method navigator-link -->
@@ -132,24 +141,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Sample_Suite" class="panel Sample_Suite">
-          <div class="suite-Sample_Suite-class-passed">
+          <div class="suite-Sample_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCases.HomeTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addCart">
-                  </a> <!-- addCart -->
-                  <span class="method-name">addCart</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Sample_Suite-class-passed -->
-          <div class="suite-Sample_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">TestCases.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -158,8 +152,23 @@
                   <a name="TC01_LoginSuccess">
                   </a> <!-- TC01_LoginSuccess -->
                   <span class="method-name">TC01_LoginSuccess</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Productss] but found [Products]
+	at PageObject.LoginPage.validatText(LoginPage.java:44)
+	at TestCases.LoginTest.TC01_LoginSuccess(LoginTest.java:18)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Sample_Suite-class-failed -->
+          <div class="suite-Sample_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="TC02_LoginFailure">
@@ -172,6 +181,21 @@
                   <a name="TC03_LockedUser">
                   </a> <!-- TC03_LockedUser -->
                   <span class="method-name">TC03_LockedUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Sample_Suite-class-passed -->
+          <div class="suite-Sample_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.HomeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCart">
+                  </a> <!-- addCart -->
+                  <span class="method-name">addCart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -233,24 +257,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addCart')
 data.setCell(0, 2, 'TestCases.HomeTest')
-data.setCell(0, 3, 2275);
+data.setCell(0, 3, 2701);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TC01_LoginSuccess')
 data.setCell(1, 2, 'TestCases.LoginTest')
-data.setCell(1, 3, 1038);
+data.setCell(1, 3, 1240);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'TC03_LockedUser')
 data.setCell(2, 2, 'TestCases.LoginTest')
-data.setCell(2, 3, 354);
+data.setCell(2, 3, 304);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'TC02_LoginFailure')
 data.setCell(3, 2, 'TestCases.LoginTest')
-data.setCell(3, 3, 266);
+data.setCell(3, 3, 297);
 window.suiteTableData['Sample_Suite']= { tableData: data, tableDiv: 'times-div-Sample_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Sample_Suite">
               </div> <!-- times-div-Sample_Suite -->
             </div> <!-- times-div -->
@@ -283,50 +307,52 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addCart</span>
-                <span class="method-start">7236 ms</span>
+                <span class="method-start">7583 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9512 ms</span>
+                <span class="method-start">10284 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setupDriver</span>
-                <span class="method-start">9852 ms</span>
+                <span class="method-start">10617 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC01_LoginSuccess</span>
-                <span class="method-start">15175 ms</span>
+                <span class="method-start">16810 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16214 ms</span>
+                <span class="method-start">18255 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupDriver</span>
-                <span class="method-start">16444 ms</span>
+                <span class="method-start">18484 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC02_LoginFailure</span>
-                <span class="method-start">22050 ms</span>
+                <span class="method-start">24876 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">22316 ms</span>
+                <span class="method-start">25174 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupDriver</span>
-                <span class="method-start">22570 ms</span>
+                <span class="method-start">25364 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC03_LockedUser</span>
-                <span class="method-start">27889 ms</span>
+                <span class="method-start">32222 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28244 ms</span>
+                <span class="method-start">32526 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

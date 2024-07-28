@@ -3,8 +3,10 @@ package TestCases;
 import PageObject.LoginPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners (Listener.class)
 public class LoginTest extends BaseClass
 {
     @Test
@@ -13,7 +15,7 @@ public class LoginTest extends BaseClass
         LoginPage lP=new LoginPage();
 
         lP.LoginFunction("standard_user","secret_sauce");
-        lP.validatText("Products");
+        lP.validatText("Productss");
 
     }
     @Test
