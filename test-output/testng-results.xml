@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-28T14:49:42Z" name="Sample Suite" finished-at="2024-07-28T14:50:11Z" duration-ms="28553">
+    <groups>
+    </groups>
+    <test started-at="2024-07-28T14:49:42Z" name="Sample Test" finished-at="2024-07-28T14:50:11Z" duration-ms="28553">
+      <class name="TestCases.LoginTest">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:TestCases.LoginTest@ea6147e]" started-at="2024-07-28T14:49:52Z" name="setupDriver" finished-at="2024-07-28T14:49:58Z" duration-ms="5323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="TC01_LoginSuccess()[pri:0, instance:TestCases.LoginTest@ea6147e]" started-at="2024-07-28T14:49:58Z" name="TC01_LoginSuccess" finished-at="2024-07-28T14:49:59Z" duration-ms="1038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_LoginSuccess -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.LoginTest@ea6147e]" started-at="2024-07-28T14:49:59Z" name="tearDown" finished-at="2024-07-28T14:49:59Z" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:TestCases.LoginTest@ea6147e]" started-at="2024-07-28T14:49:59Z" name="setupDriver" finished-at="2024-07-28T14:50:04Z" duration-ms="5605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="TC02_LoginFailure()[pri:0, instance:TestCases.LoginTest@ea6147e]" started-at="2024-07-28T14:50:04Z" name="TC02_LoginFailure" finished-at="2024-07-28T14:50:05Z" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_LoginFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.LoginTest@ea6147e]" started-at="2024-07-28T14:50:05Z" name="tearDown" finished-at="2024-07-28T14:50:05Z" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:TestCases.LoginTest@ea6147e]" started-at="2024-07-28T14:50:05Z" name="setupDriver" finished-at="2024-07-28T14:50:10Z" duration-ms="5319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="TC03_LockedUser()[pri:0, instance:TestCases.LoginTest@ea6147e]" started-at="2024-07-28T14:50:10Z" name="TC03_LockedUser" finished-at="2024-07-28T14:50:11Z" duration-ms="354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_LockedUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.LoginTest@ea6147e]" started-at="2024-07-28T14:50:11Z" name="tearDown" finished-at="2024-07-28T14:50:11Z" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.LoginTest -->
+      <class name="TestCases.HomeTest">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:TestCases.HomeTest@3fb1549b]" started-at="2024-07-28T14:49:42Z" name="setupDriver" finished-at="2024-07-28T14:49:50Z" duration-ms="7236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="addCart()[pri:0, instance:TestCases.HomeTest@3fb1549b]" started-at="2024-07-28T14:49:50Z" name="addCart" finished-at="2024-07-28T14:49:52Z" duration-ms="2275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.HomeTest@3fb1549b]" started-at="2024-07-28T14:49:52Z" name="tearDown" finished-at="2024-07-28T14:49:52Z" duration-ms="338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.HomeTest -->
+    </test> <!-- Sample Test -->
+  </suite> <!-- Sample Suite -->
+</testng-results>
