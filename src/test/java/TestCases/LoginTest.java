@@ -15,7 +15,7 @@ public class LoginTest extends BaseClass
         LoginPage lP=new LoginPage();
 
         lP.LoginFunction("standard_user","secret_sauce");
-        lP.validatText("Productss");
+        lP.validatText("Products");
 
     }
     @Test
